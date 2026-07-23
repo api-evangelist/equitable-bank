@@ -1,0 +1,67 @@
+aid: equitable-bank
+url: https://raw.githubusercontent.com/api-evangelist/equitable-bank/refs/heads/main/apis.yml
+name: Equitable Bank
+kind: company
+description: >-
+  Equitable Bank is Canada's seventh largest independent Schedule I bank by
+  assets and a wholly owned subsidiary of EQB Inc. (TSX: EQB), a Toronto-based
+  Canadian financial services company with over CAD $144 billion in combined
+  assets under management and administration. Federally chartered and Canadian
+  owned, Equitable Bank markets itself as "Canada's Challenger Bank" and, in
+  2016, launched EQ Bank, its digital-only banking platform offering high
+  interest savings accounts, GICs, and payments alongside the parent bank's
+  single-family residential and commercial lending. Equitable Bank and Equitable
+  Trust are members of the Canada Deposit Insurance Corporation (CDIC). On the
+  open-finance front, Equitable Bank does not operate a public first-party
+  developer portal or publish downloadable API specifications; consumer
+  permissioned data sharing is delivered through the Canadian aggregator Flinks
+  (Flinks Outbound) rather than a first-party API. Canada's federal
+  Consumer-Driven Banking framework (legislated in Budget 2024 with the
+  Financial Consumer Agency of Canada as overseer) is not yet operational, so
+  the bank's data-access posture today is voluntary and aggregator-mediated.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- Canada
+- Schedule I Bank
+- Digital Banking
+- Open Banking
+- Consumer-Driven Banking
+- Data Aggregation
+- Challenger Bank
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis:
+- aid: equitable-bank:eq-bank-consumer-data-sharing
+  name: EQ Bank Consumer Data Sharing (via Flinks)
+  description: >-
+    Equitable Bank / EQ Bank exposes no public first-party developer API. Under
+    explicit customer consent, EQ Bank customers can share their financial data
+    with third-party fintech applications through the Canadian data aggregator
+    Flinks (Flinks Outbound). This is aggregator-mediated data access, not a
+    documented first-party REST API, and no OpenAPI/Swagger specification is
+    published. Listed here as an honest data-access pointer only.
+  humanURL: https://eqb.investorroom.com/open-banking
+  properties:
+  - type: Documentation
+    url: https://eqb.investorroom.com/open-banking
+common:
+- type: Website
+  url: https://www.equitablebank.ca
+- type: Website
+  url: https://www.eqbank.ca
+- type: Blog
+  url: https://www.equitablebank.ca/blog
+- type: Support
+  url: https://www.equitablebank.ca/contact-us
+- type: TermsOfService
+  url: https://www.equitablebank.ca/legal/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.equitablebank.ca/legal/privacy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/equitable-bank
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,89 @@
+aid: equitable-bank
+name: Equitable Bank
+review:
+  question: Does Equitable Bank (EQ Bank) expose a public first-party developer API or downloadable OpenAPI, or is data access aggregator-only?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Equitable Bank / EQ Bank publishes NO public first-party developer API and
+    NO downloadable OpenAPI/Swagger specification. Probing developer.equitablebank.ca,
+    api.equitablebank.ca, and related developer/api subdomains returns no resolving
+    host (HTTP 000). There is no public GitHub organization (github.com/equitable-bank
+    returns 404). The corporate site (equitablebank.ca) and the EQ Bank consumer site
+    (eqbank.ca) resolve (HTTP 200) but expose only marketing, product, and investor
+    content — no API reference, no developer console, no spec.
+
+    Consumer data access is aggregator-mediated: Equitable Bank / EQ Bank partnered
+    with the Canadian aggregator Flinks and uses Flinks Outbound to let consenting
+    EQ Bank customers share financial data with third-party fintech apps. This is
+    screen-scraping / aggregator-style access managed by Flinks (onboarding,
+    accreditation, support), not a documented first-party REST API surface owned by
+    the bank. Flinks is a Canadian aggregator (National Bank of Canada owned).
+
+    Charter/entity: Equitable Bank is a federally chartered, Canadian-owned Schedule I
+    bank (Canada's seventh largest independent Schedule I bank by assets), a wholly
+    owned subsidiary of EQB Inc. (TSX: EQB), CDIC member, HQ Toronto. This is the
+    Canadian entity; there is no US arm to disambiguate.
+
+    Open-finance posture: Canada's federal Consumer-Driven Banking (CDB) framework
+    was legislated (Budget 2024 / Fall Economic Statement 2024, FCAC as overseer) but
+    is NOT yet operational, so there is no live mandated open-banking/FDX API. Equitable
+    Bank has published a public position supporting open banking and readiness for the
+    coming framework, but exposes no CDB/FDX endpoint today.
+  posture:
+    firstPartyDeveloperPortal: false
+    developerPortalURL: ''
+    developerPortalHTTPStatus: '000 (developer.equitablebank.ca does not resolve)'
+    downloadableOpenAPI: false
+    specProvenance: none
+    fdxParticipant: false
+    section1033Posture: 'n/a (Canadian institution; US 12 CFR 1033 does not apply)'
+    consumerDrivenBankingPosture: 'Publicly supportive; framework legislated but not operational as of review date'
+    aggregatorAccess: 'Flinks (Flinks Outbound) — consumer-permissioned data sharing'
+    authModel: 'none documented (no public API surface; aggregator manages auth/consent)'
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public first-party REST API is documented.
+    - protocol: Aggregator
+      provider: Flinks (Flinks Outbound)
+      documented: true
+      note: Consumer-permissioned data sharing delivered via the Flinks aggregator, not a first-party API.
+  probes:
+    - url: https://developer.equitablebank.ca
+      status: '000'
+      note: Does not resolve — no developer portal.
+    - url: https://api.equitablebank.ca
+      status: '000'
+      note: Does not resolve — no API host.
+    - url: https://www.equitablebank.ca
+      status: '200'
+      note: Corporate marketing/product/investor site; no API reference or developer console.
+    - url: https://www.eqbank.ca
+      status: '200'
+      note: EQ Bank digital-banking consumer site; no developer surface.
+    - url: https://eqb.investorroom.com/open-banking
+      status: '200'
+      note: EQB Inc. investor page stating open-banking position (Flinks partnership).
+    - url: https://github.com/equitable-bank
+      status: '404'
+      note: No public GitHub organization.
+sources:
+  - url: https://www.equitablebank.ca/about-us
+    type: Website
+    note: Confirms Schedule I bank, seventh largest independent, EQB Inc. subsidiary, $144B AUM/AUA, EQ Bank launched 2016, CDIC member.
+  - url: https://eqb.investorroom.com/open-banking
+    type: Documentation
+    note: EQB Inc. stated open-banking position.
+  - url: https://ibsintelligence.com/ibsi-news/eq-bank-partners-with-flinks-to-deliver-on-open-banking/
+    type: PressCoverage
+    note: EQ Bank partners with Flinks (Flinks Outbound) for consumer-permissioned open-banking data sharing.
+actions:
+  openapiHarvested: false
+  reason: |
+    No public first-party API and no downloadable OpenAPI/Swagger exist to harvest.
+    Data access is aggregator-mediated via Flinks. Identity-only (built-stub) record
+    with an honest aggregator-only data-access pointer is the correct, non-fabricated result.
