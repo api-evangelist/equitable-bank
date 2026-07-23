@@ -48,6 +48,10 @@ apis:
   - type: Documentation
     url: https://eqb.investorroom.com/open-banking
 common:
+- type: DomainSecurity
+  url: security/equitable-bank-domain-security.yml
+- type: LLMsTxt
+  url: llms/equitable-bank-llms.txt
 - type: Website
   url: https://www.equitablebank.ca
 - type: Website

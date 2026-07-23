@@ -1,0 +1,20 @@
+# Equitable Bank (EQ Bank)
+
+> Equitable Bank is Canada's seventh largest independent Schedule I bank by assets and a wholly owned subsidiary of EQB Inc. (TSX: EQB), a Toronto-based Canadian financial services company. Federally chartered and Canadian owned, Equitable Bank markets itself as "Canada's Challenger Bank" and, in 2016, launched EQ Bank, its digital-only banking platform (high-interest savings, GICs, payments) alongside the parent bank's residential and commercial lending. Equitable Bank and Equitable Trust are members of the Canada Deposit Insurance Corporation (CDIC).
+
+> API posture: Equitable Bank / EQ Bank does NOT operate a public first-party developer portal and publishes NO downloadable OpenAPI/Swagger specification. Consumer permissioned data sharing is delivered through the Canadian aggregator Flinks (Flinks Outbound) rather than a first-party API. Canada's federal Consumer-Driven Banking framework (legislated in Budget 2024, FCAC overseer) is not yet operational, so the data-access posture today is voluntary and aggregator-mediated. The entry below is an honest data-access pointer only, not a documented REST API.
+
+## APIs
+- [EQ Bank Consumer Data Sharing (via Flinks)](https://eqb.investorroom.com/open-banking): Aggregator-mediated consumer data access. Under explicit customer consent, EQ Bank customers share financial data with third-party fintech apps through Flinks (Flinks Outbound). No first-party REST API or OpenAPI is published.
+
+## Docs
+- [Open Banking position](https://eqb.investorroom.com/open-banking): Equitable Bank's public position on open banking / consumer-driven banking.
+
+## Company
+- [Equitable Bank](https://www.equitablebank.ca): Corporate site (lending, commercial, investor content).
+- [EQ Bank](https://www.eqbank.ca): Digital-only consumer banking platform.
+- [Blog](https://www.equitablebank.ca/blog)
+- [Contact / Support](https://www.equitablebank.ca/contact-us)
+- [Terms of Use](https://www.equitablebank.ca/legal/terms-of-use)
+- [Privacy](https://www.equitablebank.ca/legal/privacy)
+- [LinkedIn](https://www.linkedin.com/company/equitable-bank)
