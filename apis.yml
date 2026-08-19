@@ -32,7 +32,7 @@ tags:
 - Challenger Bank
 created: '2026-07-23'
 modified: '2026-07-23'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: equitable-bank:eq-bank-consumer-data-sharing
   name: EQ Bank Consumer Data Sharing (via Flinks)
