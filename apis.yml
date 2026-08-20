@@ -21,6 +21,16 @@ description: >-
   the bank's data-access posture today is voluntary and aggregator-mediated.
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
+- Financial-Services
+- Banking
+- Canada
+- Schedule I Bank
+- Digital Banking
+- Open Banking
+- Consumer-Driven Banking
+- Data Aggregation
+- Challenger Bank
+tags_raw:
 - Financial Services
 - Banking
 - Canada
