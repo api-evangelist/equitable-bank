@@ -1,4 +1,4 @@
-# Equitable Bank (equitable-bank)
+# Equitable Bank
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,58 +64,87 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Equitable Bank is Canada's seventh largest independent Schedule I bank by assets and a wholly owned subsidiary of EQB Inc. (TSX: EQB), a Toronto-based Canadian financial services company with over CAD $144 billion in combined assets under management and administration. Federally chartered and Canadian owned, it markets itself as "Canada's Challenger Bank" and launched EQ Bank, its digital-only banking platform, in 2016.
+Equitable Bank is Canada's seventh largest independent Schedule I bank by assets and a wholly owned subsidiary of EQB Inc. (TSX: EQB), a Toronto-based Canadian financial services company with over CAD $144 billion in combined assets under management and administration. Federally chartered and Canadian owned, Equitable Bank markets itself as "Canada's Challenger Bank" and, in 2016, launched EQ Bank, its digital-only banking platform offering high interest savings accounts, GICs, and payments alongside the parent bank's single-family residential and commercial lending. Equitable Bank and Equitable Trust are members of the Canada Deposit Insurance Corporation (CDIC). On the open-finance front, Equitable Bank does not operate a public first-party developer portal or publish downloadable API specifications; consumer permissioned data sharing is delivered through the Canadian aggregator Flinks (Flinks Outbound) rather than a first-party API. Canada's federal Consumer-Driven Banking framework (legislated in Budget 2024 with the Financial Consumer Agency of Canada as overseer) is not yet operational, so the bank's data-access posture today is voluntary and aggregator-mediated.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/equitable-bank/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/equitable-bank/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · Canada · Schedule I Bank · Digital Banking · Open Banking · Consumer-Driven Banking · Challenger Bank
 
-## Open Finance Posture
+## Equitable Bank on APIs.io
 
-Equitable Bank / EQ Bank does **not** operate a public first-party developer portal, and no OpenAPI/Swagger specifications are published. `developer.equitablebank.ca` does not resolve and there is no public GitHub organization.
+Everything profiled for Equitable Bank is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/equitable-bank/](https://apis.io/providers/equitable-bank/)** — or go straight to one of the APIs or properties below.
 
-Consumer-permissioned data sharing is delivered through the Canadian data aggregator **Flinks** (Flinks Outbound), not a first-party API. EQ Bank customers who provide explicit consent can share their financial data with third-party fintech applications, with visibility into what is shared, with whom, and for how long — Flinks manages onboarding, accreditation, and support.
+### APIs (1)
 
-Canada's federal **Consumer-Driven Banking** framework (legislated in Budget 2024 / Fall Economic Statement 2024, with the Financial Consumer Agency of Canada as overseer) is legislated but **not yet operational**. Data access today is therefore voluntary and aggregator-mediated.
+- [EQ Bank Consumer Data Sharing (via Flinks)](https://apis.io/apis/equitable-bank/eq-bank-consumer-data-sharing/) — Equitable Bank / EQ Bank exposes no public first-party developer API. Under explicit customer consent, EQ Bank customers can share their financial data with…
 
-## Tags
+### Published properties
 
-- Financial Services
-- Banking
-- Canada
-- Schedule I Bank
-- Digital Banking
-- Open Banking
-- Consumer-Driven Banking
-- Data Aggregation
-- Challenger Bank
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Timestamps
+#### Security (1)
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+Authentication, trust centre, and vulnerability disclosure.
 
-## APIs
+- [Equitable Bank Domain Security](https://apis.io/security/equitable-bank/equitable-bank-domain-security/)
 
-### EQ Bank Consumer Data Sharing (via Flinks)
+## Where to find this API
 
-Aggregator-mediated data access — not a documented first-party REST API. Under explicit customer consent, EQ Bank customers can share financial data with third-party fintech applications through Flinks (Flinks Outbound). No first-party OpenAPI/Swagger is published; listed as an honest data-access pointer only.
-
-- **Human URL:** [https://eqb.investorroom.com/open-banking](https://eqb.investorroom.com/open-banking)
-
-#### Properties
-
-- [Documentation](https://eqb.investorroom.com/open-banking)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.equitablebank.ca)
-- [Website (EQ Bank)](https://www.eqbank.ca)
-- [Blog](https://www.equitablebank.ca/blog)
 - [Support](https://www.equitablebank.ca/contact-us)
-- [Terms of Service](https://www.equitablebank.ca/legal/terms-of-use)
-- [Privacy Policy](https://www.equitablebank.ca/legal/privacy)
-- [LinkedIn](https://www.linkedin.com/company/equitable-bank)
+- [Blog](https://www.equitablebank.ca/blog)
+- [Terms of service](https://www.equitablebank.ca/legal/terms-of-use)
+- [Privacy policy](https://www.equitablebank.ca/legal/privacy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 6.0** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/equitable-bank/](https://apis.io/providers/equitable-bank/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Equitable Bank: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/equitable-bank/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
